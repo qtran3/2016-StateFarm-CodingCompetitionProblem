@@ -32,6 +32,7 @@ public class AgentLocator {
 	 * @return
 	 */
 	public List<Agent> getAgentsByName(String firstName, String lastName) {
+		agentParser=new AgentParser();
 		return null;
 	}
 
