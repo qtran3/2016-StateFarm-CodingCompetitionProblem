@@ -1,6 +1,5 @@
 #Team members:
-$Quan Tran M.
-$Samuel Medina
+Quan Tran M.  &  Samuel Medina
  
 # Welcome
 Welcome to the 2016 State Farm Coding Competition!
