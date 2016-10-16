@@ -17,7 +17,7 @@ public class MAINCONSOLE {
 		Elements lists=doc.select("span[itemprop=\"name\"]");
 		System.out.println(lists.get(0).text());
 		
-		Elements productLists=doc.select("div[itemprop=description]").get(0).select("ul").get(0).select("li");;
+		Elements productLists=doc.select("div[itemprop=description]").get(0).select("ul").get(0).select("li");
 		System.out.println(productLists.get(0).text());
 	}
 

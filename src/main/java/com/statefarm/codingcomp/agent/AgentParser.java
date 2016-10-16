@@ -1,6 +1,7 @@
 package com.statefarm.codingcomp.agent;
 
 import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -34,12 +35,16 @@ public class AgentParser {
 		myAgent.setName(name.text());
 		
 		//parse products
-		Elements productList=doc.select("div[itemprop=description]").get(0).select("ul").get(0).select("li");;
+		Elements productList=doc.select("div[itemprop=description]").get(0).select("ul").get(0).select("li");
 		Set <Product> setP=new HashSet<>();
 		setP.clear();
 		for (int i=0;i<productList.size();i++){
 			setP.add(Product.fromValue(productList.get(i).text()));
+			System.out.println(productList.get(i).text());
 		};
+		myAgent.setProducts(setP);
+
+		// parse offices:
 		
 		
 		return myAgent;
